@@ -18,7 +18,7 @@ function initMap()
   map = new google.maps.Map(document.getElementById('map'),
   {
     center: ottawa,
-    zoom: 12
+    zoom: 13
   });
   // if HTML5 geolocation exists
   if (navigator.geolocation)
@@ -40,7 +40,7 @@ function initMap()
         infoWindow = new google.maps.InfoWindow();
         //setting infoWindow properties
         infoWindow.setPosition(origin);
-        infoWindow.setContent('Location found.');
+        infoWindow.setContent('Your location');
         //placing infoWindow on map
         infoWindow.open(map);
         //setting center of map to user's position
