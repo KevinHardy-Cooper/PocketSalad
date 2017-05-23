@@ -1,18 +1,15 @@
 var mainApp = angular.module("mainApp", ['ngRoute']);
          mainApp.config(['$routeProvider', function($routeProvider) {
-            $routeProvider.
+            $routeProvider
+              .when('/home', {
+                 templateUrl: 'home.htm'
+              })
 
-            when('/home', {
-               templateUrl: 'home.htm',
-               controller: 'pocketController'
-            }).
+              .when('/garden', {
+                 templateUrl: 'garden.htm'
+              })
 
-            when('/seaBeans', {
-               templateUrl: 'seaBeans.htm',
-               controller: 'seaBeansController'
-            }).
-
-            otherwise({
-               redirectTo: '/home'
-            });
-         }]);
+              .otherwise({
+                 redirectTo: '/home'
+              });
+           }]);
