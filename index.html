@@ -3,7 +3,7 @@
 - page of PocketSalad.
 - @author Kevin Hardy-Cooper
 - @date April 30 2017
-- @frameworks: Google Maps API, Google Places API, Typed.js, AngularJS
+- @frameworks Google Maps API, Google Places API, Typed.js, AngularJS
 -->
 
 <!DOCTYPE html>
@@ -22,9 +22,9 @@
     <script src = "angularjs/src/module/mainApp.js"></script>
     <script src = "angularjs/src/module/pocketController.js"></script>
     <!-- typed.js -->
-    <script src="js/typed.js"></script>
+    <script src="js/asIsScripts/typed.js"></script>
     <!-- google maps api -->
-    <script src="js/APIs.js"></script>
+    <script src="js/manipulatedScripts/APIs.js"></script>
     <!-- google API subscription -->
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3I8yLmQI79a9wnUpZ6FhaKf5xoAce3Ro&libraries=places&callback=initMap">
@@ -45,13 +45,13 @@
           <div class="navbar-header">
             <!-- brand logo -->
             <a href="#home">
-              <img id="Brand" src="img/logo.png">
+              <img id="brand" src="img/logo.png">
             </a>
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
               <li><a href="#home">PocketSalad</a></li>
-              <li><a href="#garden">Garden</a></li>
+              <!-- <li><a href="#garden">Garden</a></li> -->
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -70,16 +70,6 @@
           </div>
         </div>
       </script>
-
-      <script type = "text/ng-template" id = "garden.htm">
-        <div>
-          <h1>{{garden}}</h1>
-          <div>
-            <button ng-click="showHide()">Hide Map</button>
-          </div>
-        </div>
-      </script>
-
     </div>
 
     <div id="map"></div>

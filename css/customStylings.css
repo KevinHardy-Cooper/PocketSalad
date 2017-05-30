@@ -1,27 +1,36 @@
-/* Always set the map height explicitly to define the size of the div
- * element that contains the map. */
+/*
+  * The purpose of this file is to contain the custom css stylings
+  * that were not covered by Bootstrap
+  * @author Kevin Hardy-Cooper
+  * @date May 29, 2017
+*/
 #map {
   height: 100%;
 }
-
 #typedJS {
   text-align: center;
   font-size: 20px
 }
-
-#Brand {
+#brand {
   width: 60%;
 }
-/* Optional: Makes the sample page fill the window. */
-html, body {
-  height: 80%;
-}
-
 .typed-cursor{
   opacity: 1;
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
+}
+.footer {
+  text-align: center;
+}
+html, body {
+  height: 80%;
+}
+h1 {
+  font: 400 100px/1.3 'Oleo Script', Helvetica, sans-serif;
+  color: #2b2b2b;
+  text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+  text-align: center;
 }
 @keyframes blink{
   0% { opacity:1; }
@@ -37,15 +46,4 @@ html, body {
   0% { opacity:1; }
   50% { opacity:0; }
   100% { opacity:1; }
-}
-
-h1 {
-  font: 400 100px/1.3 'Oleo Script', Helvetica, sans-serif;
-  color: #2b2b2b;
-  text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.footer {
-  text-align: center;
 }
